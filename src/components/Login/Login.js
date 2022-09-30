@@ -43,19 +43,19 @@ const Login = (props) => {
 
 
 
-  useEffect(() => {
-    console.log('EFFECT RUNNING');
+  // useEffect(() => {
+  //   console.log('EFFECT RUNNING');
 
-    return () => {
-      console.log('EFFECT CLEANUP');
-    };
-  }, []);
+  //   return () => {
+  //     console.log('EFFECT CLEANUP');
+  //   };
+  // }, []);
 
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log('Checking form validity!');
       setFormIsValid(
-        emailState.isValid && passwordState.isValid
+        emailIsValid && passwordIsValid
       );
     }, 500);
 
